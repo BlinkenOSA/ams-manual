@@ -1,0 +1,60 @@
+site_name: AMS User Manual
+site_description: User manual for the Blinken OSA Archivum Archival Management System
+site_url: https://ams-manual.archivum.org
+theme:
+  name: material
+  language: en
+  logo: assets/archivum-logo.svg
+  favicon: assets/archivum-favicon.ico
+  features:
+    - navigation.indexes
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.tooltips
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Overview: getting-started/index.md
+      - Sign in and navigate: getting-started/sign-in-and-navigation.md
+      - Dashboard: getting-started/dashboard.md
+      - Common actions: getting-started/common-actions.md
+      - Special form fields: getting-started/special-form-fields.md
+  - Archival description:
+      - Overview: archival-description/index.md
+      - Accession records: archival-description/accession-records.md
+      - Donor records: archival-description/donor-records.md
+      - Archival Unit: archival-description/archival-units.md
+      - ISAAR-CPF records: archival-description/isaar-cpf.md
+      - ISAD(G) records: archival-description/isad-g.md
+  - Archival finding aids:
+      - Overview: archival-finding-aids/index.md
+      - Folders / Items: archival-description/finding-aids.md
+      - Missing Folders / Items: archival-description/finding-aids-missing.md
+      - Unprocessed Materials: archival-description/finding-aids-unprocessed.md
+  - Collections management:
+      - Overview: collections-management/index.md
+      - Authority Lists: collections-management/lists.md
+      - Controlled Lists: collections-management/controlled-lists.md
+      - Master Location Register: collections-management/mlr.md
+      - Digitization log: collections-management/digitization.md
+  - Reference services:
+      - Overview: reference-services/index.md
+      - Researchers Database: reference-services/researchers-and-visits.md
+      - Requests and Restricted Access: reference-services/requests.md
+  - Appendices:
+      - Roles and access: reference/roles-and-access.md
+      - Glossary: reference/glossary.md
+      - Documentation conventions: reference/documentation-conventions.md
