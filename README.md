@@ -30,6 +30,8 @@ cp .env.example .env
 docker compose up --build -d
 ```
 
+On servers with the legacy standalone Compose command, use `docker-compose up --build -d` instead. The Compose file includes a legacy-compatible version declaration.
+
 The manual is available at <http://127.0.0.1:8080> by default. Change `AMS_MANUAL_PORT` in `.env` to use another local port. Keep `AMS_MANUAL_BIND_ADDRESS=127.0.0.1` so the container cannot bypass the host reverse proxy.
 
 For example, the relevant location in the existing host Nginx virtual host can forward requests to the default port:
