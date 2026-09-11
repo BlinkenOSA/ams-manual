@@ -18,9 +18,9 @@ The row's status and available buttons show whether the corresponding descriptio
 
 | Status | Meaning | Available record operation |
 |---|---|---|
-| Not exists | The Archival Unit exists, but it has no ISAD(G) record. | **Create** |
-| Draft | The ISAD(G) record exists but is not published. | **View**, **Edit**, and **Publish** |
-| Published | The ISAD(G) record is published to the public catalog. | **View**, **Edit**, and **Unpublish** |
+| <span class="ams-status-badge ams-status-badge--none">none</span> | The Archival Unit exists, but it has no ISAD(G) record. | **Create** |
+| <span class="ams-status-badge ams-status-badge--draft">draft</span> | The ISAD(G) record exists but is not published. | **View**, **Edit**, and **Publish** |
+| <span class="ams-status-badge ams-status-badge--published">published</span> | The ISAD(G) record is published to the public catalog. | **View**, **Edit**, and **Unpublish** |
 
 Creating or editing an Archival Unit does not itself create its ISAD(G) record. Use the Create action on the corresponding row.
 
@@ -52,12 +52,12 @@ Select a sortable column heading to change the table order. Expanding or collaps
 
 | Action | Availability | Description | Effect |
 |---|---|---|---|
-| Create | Not exists | Opens the ISAD(G) Form in Create mode with the Archival Unit, reference code, title, and level prefilled. | Creates the one ISAD(G) record belonging to that Archival Unit after successful submission. |
-| View | Draft or Published | Opens the ISAD(G) Form in read-only mode. | Does not change the record. |
-| Edit | Draft or Published | Opens the ISAD(G) Form with editable fields. | Saves changes after **Submit**. If the record is published, saving updates its catalog representation. |
-| Delete | Removable records only | Opens a confirmation dialog when AMS permits deletion. | Confirming permanently removes the ISAD(G) description, but the Archival Unit remains and returns to Not exists. |
-| Publish | Draft | Opens a confirmation dialog. | Publishes this specific ISAD(G) record to the [Blinken OSA Archival Catalog](https://catalog.archivum.org/). |
-| Unpublish | Published | Opens a confirmation dialog. | Removes this specific ISAD(G) record from the public catalog and affects underlying Finding Aids as described below. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--plus"></span></span> **Create** | Not exists | Opens the ISAD(G) Form in Create mode with the Archival Unit, reference code, title, and level prefilled. | Creates the one ISAD(G) record belonging to that Archival Unit after successful submission. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** | Draft or Published | Opens the ISAD(G) Form in read-only mode. | Does not change the record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Draft or Published | Opens the ISAD(G) Form with editable fields. | Saves changes after **Submit**. If the record is published, saving updates its catalog representation. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Removable records only | Opens a confirmation dialog when AMS permits deletion. | Confirming permanently removes the ISAD(G) description, but the Archival Unit remains and returns to Not exists. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-up"></span></span> **Publish** | Draft | Opens a confirmation dialog. | Publishes this specific ISAD(G) record to the [Blinken OSA Archival Catalog](https://catalog.archivum.org/). |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-down"></span></span> **Unpublish** | Published | Opens a confirmation dialog. | Removes this specific ISAD(G) record from the public catalog and affects underlying Finding Aids as described below. |
 
 ### Publication and hierarchy effects
 

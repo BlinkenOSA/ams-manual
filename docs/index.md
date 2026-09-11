@@ -1,6 +1,6 @@
 # Archival Management System user manual
 
-The **Archival Management System (AMS)** supports the archival and research-service work of the Vera and Donald Blinken Open Society Archives. This manual explains how to use the system consistently and safely, from accessioning material through description, storage, digitization, and researcher access.
+The **Archival Management System (AMS)** supports the archival and research-service work of Blinken OSA Archivum. This manual explains how to use the system consistently and safely, from accessioning material through description, storage, digitization, and researcher access.
 
 ## Choose your starting point
 
@@ -22,7 +22,3 @@ An accession documents a transfer from a donor. Archival Units organize material
 
 !!! note "Scope of this edition"
     This first edition is based on the current AMS interface and source configuration. Local cataloguing rules, approval responsibilities, and retention requirements should be added where this manual flags an institutional decision.
-
-## About the name
-
-The application source is maintained as `clockwork-admin`. In this manual and in the user interface, the product is called the **Archival Management System**, abbreviated **AMS**.

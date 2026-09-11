@@ -44,9 +44,9 @@ Expanding or collapsing rows only changes the list display. It does not edit any
 
 | Action | Availability | Description | Effect |
 |---|---|---|---|
-| Create child | Fonds and Subfonds rows | Select the plus in the **Actions** column. On a Fonds it opens a new Subfonds form; on a Subfonds it opens a new Series form. | Does not create the child until the form is submitted successfully. |
-| Edit | All levels | Opens the appropriate Fonds, Subfonds, or Series form in a modal side panel. | Changes are saved when **Submit** is selected. |
-| Delete | Removable records only | Opens a confirmation dialog. | Confirming permanently deletes the Archival Unit. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--plus"></span></span> **Create child** | Fonds and Subfonds rows | Select the plus in the **Actions** column. On a Fonds it opens a new Subfonds form; on a Subfonds it opens a new Series form. | Does not create the child until the form is submitted successfully. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | All levels | Opens the appropriate Fonds, Subfonds, or Series form in a modal side panel. | Changes are saved when **Submit** is selected. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Removable records only | Opens a confirmation dialog. | Confirming permanently deletes the Archival Unit. |
 
 A Series cannot have a child, so its Actions column has no Create child button. The Delete button is shown only when AMS marks the record as removable. Archival Units referenced by child units or other records are protected; check relationships with accessions, ISAD(G), containers, finding aids, and requests before deletion.
 

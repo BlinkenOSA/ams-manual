@@ -44,6 +44,11 @@ The stored snapshot can include the entity's title and description, Wikidata and
 
 After a Wikidata connection has been saved, an information card is displayed the next time the authority record is opened in AMS. The same stored information is used for the card displayed when a user selects the corresponding facet in the Archival Catalog.
 
+<figure class="ams-component-figure" markdown>
+  ![The WikiData tab of a People authority record showing a selected identifier and an information card with a portrait, external links, and properties.](../assets/screenshots/collections-management/authority-list-wikidata.png)
+  <figcaption>A saved Wikidata connection displayed in a People authority record.</figcaption>
+</figure>
+
 The card adapts to the type of authority:
 
 - **People:** a small portrait is displayed when Wikidata or Wikimedia Commons provides an image.
@@ -64,6 +69,11 @@ The **Duplications** tab helps identify and merge authority records that may des
 
 The table displays potential matches with their **Name**, calculated **Similarity** percentage, **Authority URL**, **Wikidata** identifier, and available merge actions. The currently open Person is excluded from its own results. By default, the API returns the ten highest-ranked candidates that meet a minimum similarity score of 20 percent.
 
+<figure class="ams-component-figure" markdown>
+  ![The Duplications tab listing possible matching People authority records with similarity scores, external identifiers, and merge actions.](../assets/screenshots/collections-management/authority-list-duplications.png)
+  <figcaption>The Duplications tab ranks potential matches and provides actions for choosing which authority record to keep.</figcaption>
+</figure>
+
 ### How potential duplicates are calculated
 
 The DRF API compares the open Person's combined first and last name with other People records. Names are normalized for comparison: accents are folded to ASCII, punctuation is removed, whitespace is normalized, and the text is converted to lowercase.
@@ -82,8 +92,8 @@ Each candidate receives a percentage from 0 to 100 and the results are ordered f
 
 | Action | Record kept | Record deleted | Effect |
 |---|---|---|---|
-| Merge | The Person currently open in the form | The candidate displayed in the Duplications table | Redirects the candidate's Finding Aids references to the open Person, then deletes the candidate. |
-| Keep This | The candidate displayed in the Duplications table | The Person currently open in the form | Redirects the open Person's Finding Aids references to the candidate, deletes the open Person, and closes the obsolete form. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--merge"></span></span> **Merge** | The Person currently open in the form | The candidate displayed in the Duplications table | Redirects the candidate's Finding Aids references to the open Person, then deletes the candidate. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--save"></span></span> **Keep This** | The candidate displayed in the Duplications table | The Person currently open in the form | Redirects the open Person's Finding Aids references to the candidate, deletes the open Person, and closes the obsolete form. |
 
 Both actions display a confirmation dialog. On confirmation, the API updates every Finding Aids relationship in which the deleted Person is used either as a **Subject (People)** value or as a **Contributors (People)** value. The operation runs in a single database transaction: if any part fails, the reference changes and deletion are rolled back together.
 

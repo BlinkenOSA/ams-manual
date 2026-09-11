@@ -18,7 +18,7 @@ Filters appear above the table and limit the records displayed.
 |---|---|
 | Search | Enter a free-text query to search **Authorized form(s) of name**. Clear the field to restore the unfiltered list. |
 | Filter by Type | Select **Personal**, **Corporate Body**, or **Family**. |
-| Filter by Status | Select **draft** or **final**. |
+| Filter by Status | Select <span class="ams-status-badge ams-status-badge--draft">draft</span> or <span class="ams-status-badge ams-status-badge--final">final</span>. |
 
 Filters can be combined. Search for an existing authority record before creating a new one to avoid splitting references between duplicate names.
 
@@ -41,8 +41,8 @@ Select a sortable column heading to change the table order.
 
 | Action | Description | Effect |
 |---|---|---|
-| View | Opens the ISAAR-CPF Form in read-only mode. | Does not change the record. |
-| Edit | Opens the ISAAR-CPF Form with editable fields. | The record changes only after **Submit** is selected. ISAD(G) records linked to this authority record will display its updated authorized name. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** | Opens the ISAAR-CPF Form in read-only mode. | Does not change the record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Opens the ISAAR-CPF Form with editable fields. | The record changes only after **Submit** is selected. ISAD(G) records linked to this authority record will display its updated authorized name. |
 
 The current list provides View and Edit actions. It does not display a Delete action.
 

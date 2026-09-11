@@ -72,7 +72,7 @@ The **Containers** view lists each registered digital version connected at conta
 
 ### Row action
 
-Select **View** to open the technical metadata registered for that digital version. The metadata is displayed in a read-only structured view. AMS reports when no technical metadata is available.
+Select <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** to open the technical metadata registered for that digital version. The metadata is displayed in a read-only structured view. AMS reports when no technical metadata is available.
 
 ## Container Checklist
 
@@ -112,7 +112,7 @@ The **Finding Aids (Folders / Items)** view lists digitized materials whose digi
 
 ### Row action
 
-Select **View** to inspect the technical metadata registered for the Folder / Item's digital version. The information is read-only.
+Select <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** to inspect the technical metadata registered for the Folder / Item's digital version. The information is read-only.
 
 ## Recommended quality-control checks
 

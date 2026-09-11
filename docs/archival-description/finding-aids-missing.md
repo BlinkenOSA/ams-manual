@@ -22,6 +22,6 @@ Use the **Series** filter above the table to limit the results to one Series. Cl
 
 | Action | Description | Effect |
 |---|---|---|
-| Set non missing | Opens a confirmation dialog for the selected record. | Confirming clears the record's missing status and removes it from this list. It does not delete the record. |
+| <span class="ams-ui-button ams-ui-button--small ams-ui-button--missing" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close-circle"></span></span> **Set non missing** | Opens a confirmation dialog for the selected record. | Confirming clears the record's missing status and removes it from this list. It does not delete the record. |
 
 Records are marked as missing or non-missing from the publication and status controls in [Finding Aids - Folders / Items](finding-aids.md#folder-item-row-actions). The list has no footer creation action; create and maintain Folder / Item records from that module.

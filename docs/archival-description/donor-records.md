@@ -4,9 +4,9 @@ Donor records identify the person or organization from which material is transfe
 
 ## Donor Records List
 
-![Donor Records screen](../assets/screenshots/archival-description/donors.jpg)
+![Donor Records list with donor names and contact details blurred](../assets/screenshots/archival-description/donors.png)
 
-*The Donor Records list provides a free-text search, sortable identity and location columns, row actions, and the New Donor button.*
+*The Donor Records list provides a free-text search, sortable identity and location columns, row actions, pagination, and the New Donor button. Personal details are blurred in this example.*
 
 ### Filters
 
@@ -35,9 +35,9 @@ Select a sortable column heading to change the table order.
 
 | Action | Description | Effect |
 |---|---|---|
-| View | Opens the Donor Form in read-only mode. | Does not change the record. |
-| Edit | Opens the Donor Form with editable fields. | The record changes only after **Submit** is selected. Changes affect every accession that links to this donor. |
-| Delete | Opens a confirmation dialog for a donor that AMS allows to be removed. | Confirming permanently deletes the donor record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** | Opens the Donor Form in read-only mode. | Does not change the record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Opens the Donor Form with editable fields. | The record changes only after **Submit** is selected. Changes affect every accession that links to this donor. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Opens a confirmation dialog for a donor that AMS allows to be removed. | Confirming permanently deletes the donor record. |
 
 The Delete button is shown only when the donor is removable. A donor linked to an accession is protected and cannot be deleted. Before deleting an unlinked donor, verify that it is not needed as evidence of a transfer relationship.
 

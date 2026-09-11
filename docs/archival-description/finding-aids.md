@@ -26,6 +26,10 @@ The **Containers** button remains disabled until a Series is selected. Select it
 
 The Container List displays the containers assigned to the selected Series. Each container row can be expanded with the plus icon to display its Folder / Item records; use the minus icon to collapse it again.
 
+![Finding Aids Container List with the container creation form expanded](../assets/screenshots/archival-description/finding-aids-container-list.png)
+
+*The Container List combines container creation, expandable container rows, row-level actions, bulk publication controls, and pagination.*
+
 ### Columns
 
 | Column | Description | Sortable |
@@ -45,13 +49,13 @@ The Container List displays the containers assigned to the selected Series. Each
 
 | Action | Availability | Description | Effect |
 |---|---|---|---|
-| Expand / Collapse | All containers | Shows or hides the Folder / Item table belonging to the container. | Changes only the table display. |
-| Barcode | All containers | Opens the container's barcode form in a drawer. | Saves the barcode when the drawer form is submitted. |
-| Digital Copies | Containers with digital-version information | Opens the digital versions drawer. | Changes are saved from the drawer form. |
-| Edit | All containers | Opens the Container Form in a drawer. | Saves changes when the form is submitted. |
-| Delete | Removable containers only | Opens a confirmation dialog. | Confirming permanently removes the container. AMS does not offer Delete when the container is not removable. |
-| Publish all in container | A container with at least one record when not all are published | Opens a confirmation dialog. | Publishes every Folder / Item record in that container. |
-| Unpublish all in container | A container whose records are all published | Opens a confirmation dialog. | Unpublishes every Folder / Item record in that container from the public catalog. |
+| <span class="ams-ui-expand" aria-hidden="true">+</span> / <span class="ams-ui-expand ams-ui-expand--open" aria-hidden="true">−</span> **Expand / Collapse** | All containers | Shows or hides the Folder / Item table belonging to the container. | Changes only the table display. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--barcode"></span></span> **Barcode** | All containers | Opens the container's barcode form in a drawer. When a barcode is already assigned, the clickable barcode text replaces this icon. | Saves the barcode when the drawer form is submitted. |
+| <span class="ams-digital-link" aria-hidden="true">Master: 1&nbsp; &#124; &nbsp;Access: 1</span> **Digital Copies** | Containers with digital-version information | Select the master/access-copy count to open the digital versions drawer. | Changes are saved from the drawer form. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | All containers | Opens the Container Form in a drawer. | Saves changes when the form is submitted. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Removable containers only | Opens a confirmation dialog. | Confirming permanently removes the container. AMS does not offer Delete when the container is not removable. |
+| <span class="ams-ui-button ams-ui-button--small ams-ui-button--not-published" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-up"></span></span> **Publish all in container** | A container with at least one record when not all are published | Opens a confirmation dialog. | Publishes every Folder / Item record in that container. |
+| <span class="ams-ui-button ams-ui-button--small ams-ui-button--published" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-down"></span></span> **Unpublish all in container** | A container whose records are all published | Opens a confirmation dialog. | Unpublishes every Folder / Item record in that container from the public catalog. |
 
 ### Footer actions
 
@@ -68,6 +72,11 @@ The Container List displays the containers assigned to the selected Series. Each
 ## Container Form
 
 Select **Container Form** in the footer to display the creation form above the Container List. The same button collapses the form when it is open.
+
+<figure class="ams-component-figure" markdown>
+  ![The Create Containers form with a system-supplied container number, Carrier type selector, and fields for Barcode, Legacy ID, and Container Label.](../assets/screenshots/archival-description/finding-aids-container-form.png)
+  <figcaption>The expanded Container Form used to create a container in the selected Series.</figcaption>
+</figure>
 
 | Field | Requirement | Guidance |
 |---|---|---|
@@ -87,6 +96,11 @@ The Edit action opens a drawer containing **Container No.**, **Carrier type**, *
 
 Select the plus icon at the beginning of a container row to display the Folder / Item records inside it.
 
+<figure class="ams-component-figure" markdown>
+  ![An expanded container row displaying its Folder or Item records, row actions, publication controls, and creation buttons.](../assets/screenshots/archival-description/finding-aids-folder-item-list.png)
+  <figcaption>An expanded container with its Folder / Item Records List and creation actions.</figcaption>
+</figure>
+
 ### Columns
 
 | Column | Description | Sortable |
@@ -102,14 +116,14 @@ Select the plus icon at the beginning of a container row to display the Folder /
 
 | Action | Description | Effect |
 |---|---|---|
-| Quick Edit | Opens the compact Folder / Item form in a drawer. | Saves changes when the drawer form is submitted. |
-| Edit | Opens the full Folder / Item Form. | Saves changes when the form is submitted. |
-| Delete | Opens a confirmation dialog when the record is removable. | Confirming permanently removes the Folder / Item record. |
-| Catalog URL | Opens the published record in the [Blinken OSA Archival Catalog](https://catalog.archivum.org/). | Does not change the AMS record. This action is shown only when a catalog record is available. |
-| Clone | Opens a confirmation dialog. | Confirming immediately creates a new Folder / Item record by cloning the selected record and refreshes the lists. Review the clone afterward, particularly its identifiers, title, dates, and inherited metadata. |
-| Publish / Unpublish | Opens a confirmation dialog. | Publishes the record to, or removes it from, the public catalog. |
-| Set missing / Set non-missing | Opens a confirmation dialog. | Changes the record's missing status. A record marked missing is included in **Missing Folders / Items**; setting it non-missing removes it from that review list without deleting it. |
-| Set confidential / Unset confidential | Opens a confirmation dialog. | Changes the record's confidential status. Review the confidentiality display text and access metadata in the form before publishing. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--form"></span></span> **Quick Edit** | Opens the compact Folder / Item form in a drawer. | Saves changes when the drawer form is submitted. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Opens the full Folder / Item Form. | Saves changes when the form is submitted. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Opens a confirmation dialog when the record is removable. | Confirming permanently removes the Folder / Item record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--global"></span></span> **Catalog URL** | Opens the published record in the [Blinken OSA Archival Catalog](https://catalog.archivum.org/). | Does not change the AMS record. This action is shown only when a catalog record is available. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--copy"></span></span> **Clone** | Opens a confirmation dialog. | Confirming immediately creates a new Folder / Item record by cloning the selected record and refreshes the lists. Review the clone afterward, particularly its identifiers, title, dates, and inherited metadata. |
+| <span class="ams-ui-button ams-ui-button--small ams-ui-button--not-published" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-up"></span></span> **Publish** / <span class="ams-ui-button ams-ui-button--small ams-ui-button--published" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--arrow-down"></span></span> **Unpublish** | Opens a confirmation dialog. | Publishes the record to, or removes it from, the public catalog. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close-circle"></span></span> **Set missing** / <span class="ams-ui-button ams-ui-button--small ams-ui-button--missing" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close-circle"></span></span> **Set non-missing** | Opens a confirmation dialog. | Changes the record's missing status. A record marked missing is included in **Missing Folders / Items**; setting it non-missing removes it from that review list without deleting it. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--warning"></span></span> **Set confidential** / <span class="ams-ui-button ams-ui-button--small ams-ui-button--confidential" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--warning"></span></span> **Unset confidential** | Opens a confirmation dialog. | Changes the record's confidential status. Review the confidentiality display text and access metadata in the form before publishing. |
 
 ### Footer actions
 
@@ -121,6 +135,10 @@ Select the plus icon at the beginning of a container row to display the Folder /
 ## Folder / Item Form
 
 The Folder / Item Form is used to create and edit Folder / Item records. **New Folder / Item** opens it with fresh system identifiers for the selected container; **Edit** opens the saved values of an existing record.
+
+![Finding Aids Folder or Item Form displaying system identifiers and the Basic Metadata tab](../assets/screenshots/archival-description/finding-aids-form.png)
+
+*The Folder / Item Form places system identifiers above tabs for Basic Metadata, Extra Metadata, Contributors, Subjects, and Notes.*
 
 | Mode | Behavior | Footer actions |
 |---|---|---|
@@ -288,6 +306,10 @@ The selected template supplies copied starting values. AMS supplies fresh system
 ## Table View
 
 **Table View** opens all Folder / Item records from the selected Series in an Excel-style spreadsheet editor. It is useful for comparing records, correcting repeated metadata, and making consistent changes across a large Series without opening each full form separately.
+
+![Finding Aids Table View showing Folder or Item metadata in an editable spreadsheet grid](../assets/screenshots/archival-description/finding-aids-table-view.png)
+
+*Table View displays the selected Series in an editable grid with Find and Replace controls, column filters, and Excel export.*
 
 The grid contains these editable columns:
 

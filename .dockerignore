@@ -1,0 +1,9 @@
+.git
+.gitignore
+.idea
+.DS_Store
+.env
+__pycache__
+*.py[cod]
+site
+python3

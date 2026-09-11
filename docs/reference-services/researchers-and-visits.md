@@ -4,11 +4,11 @@ The **Researchers Database** contains **Researchers**, **Researcher Visits**, an
 
 ## Researchers
 
-Researchers normally register through the [Blinken OSA Archival Catalog registration form](https://catalog.archivum.org/registration). The submitted information is saved in AMS and appears in the **Researchers** list with the status **New**.
+Researchers normally register through the [Blinken OSA Archival Catalog registration form](https://catalog.archivum.org/registration). The submitted information is saved in AMS and appears in the **Researchers** list with the status <span class="ams-status-badge ams-status-badge--new">New</span>.
 
-![Researchers list](../assets/screenshots/research-services/researchers.jpg)
+![Researchers List with researcher names, card numbers, and email addresses blurred](../assets/screenshots/research-services/researchers.png)
 
-*The Researchers list provides search, filters, record actions, and registration-status controls. This documentation view is filtered to avoid displaying personal data.*
+*The Researchers List provides search, country and approval filters, record actions, registration-status controls, and pagination. Personal details are blurred in this example.*
 
 ### Registration and approval workflow
 
@@ -16,13 +16,13 @@ Researchers normally register through the [Blinken OSA Archival Catalog registra
 2. AMS creates the researcher record and assigns the next virtual card number. The card number is retained internally while the registration awaits approval.
 3. The researcher receives an automated email confirming that the registration was received. The Reference Service Desk receives a separate automated email notifying staff of the new registration.
 4. The Reference Service Desk reviews the submitted identity, contact, affiliation, and research information. If anything is incomplete or uncertain, staff should contact the researcher by email or, where available, by phone before approving the registration.
-5. When the information has been verified, select the **New** status badge in the Researchers list and confirm the approval action.
-6. The status changes to **Approved**. AMS sends the researcher an automated approval email containing their virtual card number.
+5. When the information has been verified, select the <span class="ams-status-badge ams-status-badge--new">New</span> status badge in the Researchers list and confirm the approval action.
+6. The status changes to <span class="ams-status-badge ams-status-badge--approved">Approved</span>. AMS sends the researcher an automated approval email containing their virtual card number.
 
-The researcher must keep the virtual card number because it is required when requesting archival materials. A researcher with **New** or **Suspended** status is not available in the researcher selection used to create requests; approval is therefore required before the first request can be submitted.
+The researcher must keep the virtual card number because it is required when requesting archival materials. A researcher with <span class="ams-status-badge ams-status-badge--new">New</span> or <span class="ams-status-badge ams-status-badge--suspended">Suspended</span> status is not available in the researcher selection used to create requests; approval is therefore required before the first request can be submitted.
 
 !!! important "Approval sends an email"
-    Approving a **New** researcher immediately sends the registration-approved email to the address stored in the record. Verify the email address and the submitted data before confirming the action.
+    Approving a new researcher immediately sends the registration-approved email to the address stored in the record. Verify the email address and the submitted data before confirming the action.
 
 ### Assisted registration in AMS
 
@@ -31,9 +31,9 @@ Reference Service Desk staff can register a new researcher directly in AMS when 
 1. Search the Researchers list by name to check that a record does not already exist. Also review the displayed email address before creating a duplicate; researcher email addresses must be unique.
 2. Select **New Researcher** below the table.
 3. Complete the Researcher Form and select **Submit**.
-4. Review the saved record and approve it using the **New** status badge once the information has been checked.
+4. Review the saved record and approve it using the <span class="ams-status-badge ams-status-badge--new">New</span> status badge once the information has been checked.
 
-A record created directly in AMS also starts with **New** status and receives its card number when it is first saved. Creating the record through AMS does not send the two Catalog self-registration emails. The approval action does send the researcher their approval email and virtual card number.
+A record created directly in AMS also starts with <span class="ams-status-badge ams-status-badge--new">New</span> status and receives its card number when it is first saved. Creating the record through AMS does not send the two Catalog self-registration emails. The approval action does send the researcher their approval email and virtual card number.
 
 ### Researchers List
 
@@ -43,7 +43,7 @@ A record created directly in AMS also starts with **New** status and receives it
 | --- | --- |
 | Search | Searches the researcher's first, middle, and last names. |
 | Country | Limits the list to a permanent-address country already used in researcher records. |
-| Approval | Limits the list to **New**, **Approved**, or **Suspended** researchers. |
+| Approval | Limits the list to <span class="ams-status-badge ams-status-badge--new">New</span>, <span class="ams-status-badge ams-status-badge--approved">Approved</span>, or <span class="ams-status-badge ams-status-badge--suspended">Suspended</span> researchers. |
 
 #### Columns
 
@@ -61,12 +61,12 @@ A record created directly in AMS also starts with **New** status and receives it
 
 | Action | Availability and effect |
 | --- | --- |
-| **View** | Opens the Researcher Form without allowing changes. |
-| **Edit** | Opens the Researcher Form for correction or updating. Editing does not by itself approve the researcher. |
-| **Delete** | Appears only when the record is removable. After confirmation, permanently deletes the researcher record. Use **Suspend** instead when the identity and service history must be retained. |
-| Select **New** | After confirmation, changes the status to **Approved** and emails the virtual card number to the researcher. |
-| Select **Approved** | After confirmation, changes the status to **Suspended**. The researcher is no longer available for new request selection. No registration email is sent. |
-| **Undo** beside **Suspended** | After confirmation, reactivates the record and returns it to **Approved**. No registration email is sent. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** | Opens the Researcher Form without allowing changes. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Opens the Researcher Form for correction or updating. Editing does not by itself approve the researcher. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Appears only when the record is removable. After confirmation, permanently deletes the researcher record. Use **Suspend** instead when the identity and service history must be retained. |
+| Select <span class="ams-status-badge ams-status-badge--new">New</span> | After confirmation, changes the status to <span class="ams-status-badge ams-status-badge--approved">Approved</span> and emails the virtual card number to the researcher. |
+| Select <span class="ams-status-badge ams-status-badge--approved">Approved</span> | After confirmation, changes the status to <span class="ams-status-badge ams-status-badge--suspended">Suspended</span>. The researcher is no longer available for new request selection. No registration email is sent. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--undo"></span></span> **Undo** beside <span class="ams-status-badge ams-status-badge--suspended">Suspended</span> | After confirmation, reactivates the record and returns it to <span class="ams-status-badge ams-status-badge--approved">Approved</span>. No registration email is sent. |
 
 #### Footer action
 
@@ -104,9 +104,9 @@ Selecting **Submit** creates or updates the record. In View or Edit mode, **Show
 
 Use **Researcher Visits** to register and maintain Reading Room visits. Link the correct researcher and record the visit data required by the form and local service procedure.
 
-![New Researcher Visit controls](../assets/screenshots/research-services/researcher-visits.jpg)
+![Researcher Visits list with researcher names, email addresses, and card numbers blurred](../assets/screenshots/research-services/researcher-visits.png)
 
-*The visit-entry controls are shown without the visit history, which contains personal data.*
+*The Researcher Visits list combines the new-visit check-in controls with sortable visit history, check-out actions, and pagination. Personal details are blurred in this example.*
 
 ## Statistics
 

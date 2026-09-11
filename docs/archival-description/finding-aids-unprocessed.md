@@ -30,11 +30,11 @@ The Container List displays containers assigned to the selected unprocessed Seri
 
 | Action | Availability | Description | Effect |
 |---|---|---|---|
-| Barcode | All containers | Opens the container's barcode form in a drawer. | Saves the barcode when the drawer form is submitted. |
-| Digital Copies | Containers with digital-version information | Opens the digital versions drawer. | Changes are saved from the drawer form. |
-| Edit | All containers | Opens the Container Form in a drawer. | Saves changes when the form is submitted. |
-| Delete | Removable containers only | Opens a confirmation dialog. | Confirming permanently removes the container. The button is disabled when the container is not removable. |
-| Move container | All containers | Opens the container-movement form. | Submitting moves the container to the selected destination in the processed Finding Aids hierarchy. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--barcode"></span></span> **Barcode** | All containers | Opens the container's barcode form in a drawer. When a barcode is already assigned, the clickable barcode text replaces this icon. | Saves the barcode when the drawer form is submitted. |
+| <span class="ams-digital-link" aria-hidden="true">Master: 1&nbsp; &#124; &nbsp;Access: 1</span> **Digital Copies** | Containers with digital-version information | Select the master/access-copy count to open the digital versions drawer. | Changes are saved from the drawer form. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | All containers | Opens the Container Form in a drawer. | Saves changes when the form is submitted. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Removable containers only | Opens a confirmation dialog. | Confirming permanently removes the container. The button is disabled when the container is not removable. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--swap"></span></span> **Move container** | All containers | Opens the container-movement form. | Submitting moves the container to the selected destination in the processed Finding Aids hierarchy. |
 
 Publication controls, Templates, Table View, and Label Print are not displayed in this workflow.
 

@@ -8,12 +8,22 @@ A Select field chooses a value from AMS rather than accepting unrestricted text.
 
 Select the matching result to link it to the current record. Use the clear control only when the relationship should be removed.
 
+<figure class="ams-component-figure" markdown>
+  ![An open Select field with a search box and ISBN and ISSN as the available choices.](../assets/screenshots/getting-started/select-field-example.png)
+  <figcaption>A Select field showing its search box and available choices.</figcaption>
+</figure>
+
 ## Select with Add and Edit
 
 A **Select with Add and Edit** field combines a searchable selector with two buttons:
 
-- the **pencil** opens the currently selected related record for editing; and
-- the **plus** opens a blank form for creating a related record.
+- the <span class="ams-ui-button" aria-hidden="true"><svg viewBox="64 64 896 896" focusable="false"><path d="M257.7 752c2 0 4-.2 6-.5L431.9 722c2-.4 3.9-1.3 5.3-2.8l423.9-423.9a9.96 9.96 0 000-14.1L694.9 114.9c-1.9-1.9-4.4-2.9-7.1-2.9s-5.2 1-7.1 2.9L256.8 538.8c-1.5 1.5-2.4 3.3-2.8 5.3l-29.5 168.2a33.5 33.5 0 009.4 29.8c6.6 6.4 14.9 9.9 23.8 9.9zm67.4-174.4L687.8 215l73.3 73.3-362.7 362.6-88.9 15.7 15.6-89zM880 836H144c-17.7 0-32 14.3-32 32v36c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-36c0-17.7-14.3-32-32-32z"></path></svg></span> **Edit** (pencil) button opens the currently selected related record for editing; and
+- the <span class="ams-ui-button" aria-hidden="true"><svg viewBox="64 64 896 896" focusable="false"><path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8z"></path><path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8z"></path></svg></span> **Add** (plus) button opens a blank form for creating a related record.
+
+<figure class="ams-component-figure" markdown>
+  ![A Select with Add and Edit field containing a selected value, followed by the Edit and Add buttons.](../assets/screenshots/getting-started/select-with-add-and-edit.png)
+  <figcaption>The complete Select with Add and Edit component with a value selected.</figcaption>
+</figure>
 
 The pencil is available only after a value has been selected. Both forms open in a drawer without leaving the parent record. When the related record is submitted, AMS refreshes the available choices and selects the created or edited record in the parent field.
 
@@ -46,6 +56,11 @@ Some paired text fields can use DeepL-assisted translation. When an Original Loc
 
 AMS asks for confirmation before sending the field to the translation service. The returned translation is inserted into the empty paired field.
 
+<figure class="ams-component-figure" markdown>
+  ![A Contents Summary field containing English text with a Translate to Original Language action below it.](../assets/screenshots/getting-started/deepl-assisted-translation.png)
+  <figcaption>A populated field offering DeepL-assisted translation into the selected original language.</figcaption>
+</figure>
+
 !!! warning "Review automatic translations"
     DeepL output is a draft. Check names, archival terminology, dates, abbreviations, and historical context before submitting the form. The translation action fills the field but does not save the parent record until you select **Submit**.
 
@@ -54,6 +69,11 @@ AMS asks for confirmation before sending the field to the translation service. T
 A **Formatted Text** field stores its content using Markdown syntax. Markdown adds structure and emphasis with plain-text characters. When the record is published, the Blinken OSA Archival Catalog interprets this Markdown and displays the text with the corresponding formatting rather than showing the formatting characters.
 
 The field toolbar provides common Markdown operations, including bold and italic text, strikethrough, numbered and bulleted lists, links, quotations, and tables. You can use the toolbar or enter the Markdown syntax directly.
+
+<figure class="ams-component-figure" markdown>
+  ![An empty Formatted Text editor with its Markdown formatting toolbar and editing-mode controls.](../assets/screenshots/getting-started/formatted-text-editor.png)
+  <figcaption>The Formatted Text editor provides formatting actions above the text-entry area.</figcaption>
+</figure>
 
 | Intended formatting | Markdown example |
 |---|---|

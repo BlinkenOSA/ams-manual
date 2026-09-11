@@ -1,0 +1,287 @@
+/* Static, non-interactive replicas of controls used in AMS documentation. */
+.ams-ui-button {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+  box-sizing: border-box;
+  color: rgb(0 0 0 / 88%);
+  display: inline-flex;
+  height: 32px;
+  justify-content: center;
+  margin: 0 0.2em;
+  padding: 4px 15px;
+  pointer-events: none;
+  vertical-align: middle;
+  width: 46px;
+}
+
+.ams-ui-button svg {
+  fill: currentcolor;
+  height: 14px;
+  width: 14px;
+}
+
+.ams-ui-button--small {
+  border-radius: 4px;
+  height: 24px;
+  padding: 0;
+  width: 24px;
+}
+
+.ams-ui-button--small svg {
+  height: 16px;
+  width: 16px;
+}
+
+.ams-ui-icon {
+  background-color: currentcolor;
+  display: block;
+  height: 16px;
+  mask: var(--ams-ui-icon) center / contain no-repeat;
+  width: 16px;
+  -webkit-mask: var(--ams-ui-icon) center / contain no-repeat;
+}
+
+.ams-ui-icon--form {
+  --ams-ui-icon: url("../assets/icons/form-outlined.svg");
+}
+
+.ams-ui-icon--edit {
+  --ams-ui-icon: url("../assets/icons/edit-outlined.svg");
+}
+
+.ams-ui-icon--delete {
+  --ams-ui-icon: url("../assets/icons/delete-outlined.svg");
+}
+
+.ams-ui-icon--global {
+  --ams-ui-icon: url("../assets/icons/global-outlined.svg");
+}
+
+.ams-ui-icon--copy {
+  --ams-ui-icon: url("../assets/icons/copy-outlined.svg");
+}
+
+.ams-ui-icon--arrow-up {
+  --ams-ui-icon: url("../assets/icons/arrow-up-outlined.svg");
+}
+
+.ams-ui-icon--arrow-down {
+  --ams-ui-icon: url("../assets/icons/arrow-down-outlined.svg");
+}
+
+.ams-ui-icon--close-circle {
+  --ams-ui-icon: url("../assets/icons/close-circle-outlined.svg");
+}
+
+.ams-ui-icon--warning {
+  --ams-ui-icon: url("../assets/icons/warning-outlined.svg");
+}
+
+.ams-ui-icon--merge {
+  --ams-ui-icon: url("../assets/icons/merge-outlined.svg");
+}
+
+.ams-ui-icon--save {
+  --ams-ui-icon: url("../assets/icons/save-outlined.svg");
+}
+
+.ams-ui-icon--check {
+  --ams-ui-icon: url("../assets/icons/check-outlined.svg");
+}
+
+.ams-ui-icon--check-square {
+  --ams-ui-icon: url("../assets/icons/check-square-outlined.svg");
+}
+
+.ams-ui-icon--close {
+  --ams-ui-icon: url("../assets/icons/close-outlined.svg");
+}
+
+.ams-ui-icon--file-protect {
+  --ams-ui-icon: url("../assets/icons/file-protect-outlined.svg");
+}
+
+.ams-ui-icon--info-circle {
+  --ams-ui-icon: url("../assets/icons/info-circle-outlined.svg");
+}
+
+.ams-ui-icon--plus {
+  --ams-ui-icon: url("../assets/icons/plus-outlined.svg");
+}
+
+.ams-ui-icon--printer {
+  --ams-ui-icon: url("../assets/icons/printer-outlined.svg");
+}
+
+.ams-ui-icon--undo {
+  --ams-ui-icon: url("../assets/icons/undo-outlined.svg");
+}
+
+.ams-ui-icon--cloud-upload {
+  --ams-ui-icon: url("../assets/icons/cloud-upload-outlined.svg");
+}
+
+.ams-ui-icon--eye {
+  --ams-ui-icon: url("../assets/icons/eye-outlined.svg");
+}
+
+.ams-ui-icon--barcode {
+  --ams-ui-icon: url("../assets/icons/barcode-outlined.svg");
+}
+
+.ams-ui-icon--swap {
+  --ams-ui-icon: url("../assets/icons/swap-outlined.svg");
+}
+
+.ams-ui-expand {
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  box-sizing: border-box;
+  color: rgb(0 0 0 / 88%);
+  display: inline-flex;
+  font-size: 13px;
+  height: 17px;
+  justify-content: center;
+  line-height: 15px;
+  margin: 0 0.12em;
+  vertical-align: middle;
+  width: 17px;
+}
+
+.ams-ui-expand--open {
+  border-color: #91caff;
+  color: #1677ff;
+}
+
+.ams-digital-link {
+  color: #666;
+  display: inline-block;
+  font-size: 0.8em;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.ams-ui-button--not-published {
+  background-color: #ba3300;
+  border-color: #ba3300;
+  color: #fff;
+}
+
+.ams-ui-button--published {
+  background-color: #295211;
+  border-color: #295211;
+  color: #fff;
+}
+
+.ams-ui-button--missing {
+  background-color: #1fb7fb;
+  color: #fff;
+}
+
+.ams-ui-button--confidential {
+  background-color: #ffeb37;
+  color: #000;
+}
+
+.ams-status-badge {
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px #fff;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 400;
+  height: 20px;
+  line-height: 20px;
+  min-width: 20px;
+  padding: 0 6px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.ams-status-badge--draft,
+.ams-status-badge--new {
+  background-color: #fa8c16;
+}
+
+.ams-status-badge--final,
+.ams-status-badge--published,
+.ams-status-badge--approved {
+  background-color: #376e18;
+}
+
+.ams-status-badge--none,
+.ams-status-badge--suspended {
+  background-color: #ba3300;
+}
+
+.ams-status-badge--request-waiting,
+.ams-status-badge--other-request {
+  background-color: #666;
+}
+
+.ams-status-badge--request-queue {
+  background-color: #ba3300;
+}
+
+.ams-status-badge--request-pending {
+  background-color: #fa8c16;
+}
+
+.ams-status-badge--request-delivered {
+  background-color: rgba(45, 184, 227, 0.66);
+}
+
+.ams-status-badge--request-returned,
+.ams-status-badge--restricted-approved {
+  background-color: #83c04d;
+}
+
+.ams-status-badge--request-reshelved {
+  background-color: #376e18;
+}
+
+.ams-status-badge--request-served,
+.ams-status-badge--restricted-lifted {
+  background-color: #223f00;
+}
+
+.ams-status-badge--restricted-material,
+.ams-status-badge--restricted-new {
+  background-color: #e03c3c;
+}
+
+.ams-status-badge--restricted-onsite {
+  background-color: #4dc098;
+}
+
+.ams-status-badge--restricted-rejected {
+  background-color: #e06d3c;
+}
+
+.ams-status-badge--missing {
+  background-color: #1fb7fb;
+}
+
+.ams-component-figure {
+  margin: 1.25rem 0;
+}
+
+.ams-component-figure img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.ams-component-figure figcaption {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}

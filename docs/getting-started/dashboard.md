@@ -29,6 +29,10 @@ Searchable metadata includes:
 4. Optionally narrow the results by **Description Level** or **Series Reference Code**.
 5. Open a result to review the corresponding AMS record.
 
+![Dashboard Search results for a full-text query](../assets/screenshots/getting-started/dashboard-search.png)
+
+*The Search view highlights matching terms and shows each result's reference code, record type, and available actions.*
+
 Search results can contain several record types. Check the record type and reference code before opening or acting on a result.
 
 ## Statistics

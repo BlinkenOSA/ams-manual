@@ -10,7 +10,7 @@ The **Research** group can use Requests List and Digital Requests. Restricted Ac
 
 ## Requests submitted through the Archival Catalog
 
-An approved researcher can request materials through the Blinken OSA [Archival Catalog](https://catalog.archivum.org/). The Catalog verifies the researcher's email address and virtual card number. A researcher whose registration is still **New** or has been **Suspended** cannot submit a request.
+An approved researcher can request materials through the Blinken OSA [Archival Catalog](https://catalog.archivum.org/). The Catalog verifies the researcher's email address and virtual card number. A researcher whose registration is still <span class="ams-status-badge ams-status-badge--new">New</span> or has been <span class="ams-status-badge ams-status-badge--suspended">Suspended</span> cannot submit a request.
 
 A request records a planned visit or access date and one or more requested materials. Archival requests are managed at container level in AMS: one table row represents a container, while the **Folders / Items** column identifies the individual Folder / Item records requested from that container. Analog materials are also served at container level, which means that researchers receive the full archival box rather than only the requested Folder / Item; staff must therefore remove any restricted, rejected, or otherwise non-serviceable material before handing over the box.
 
@@ -24,10 +24,10 @@ In one Catalog request, a researcher can request up to **six containers per mate
 - library materials; and
 - Film Library materials.
 
-The six available processing slots are tracked per researcher and material type. If a researcher submits additional requests while all six slots for a type are occupied, the additional containers receive **In Queue** status. They do not require manual promotion: as containers of the same type complete processing and release slots, AMS automatically moves the next queued containers to **In Processing**.
+The six available processing slots are tracked per researcher and material type. If a researcher submits additional requests while all six slots for a type are occupied, the additional containers receive <span class="ams-status-badge ams-status-badge--request-queue">In Queue</span> status. They do not require manual promotion: as containers of the same type complete processing and release slots, AMS automatically moves the next queued containers to **In Processing**.
 
 !!! note "In Processing is labelled Pending in AMS"
-    The current Requests List filter and status badge use the label **Pending** for the operational **In Processing** stage. In this manual, **In Processing (Pending)** refers to that same status.
+    The current Requests List filter and status badge use the label <span class="ams-status-badge ams-status-badge--request-pending">Pending</span> for the operational **In Processing** stage. In this manual, **In Processing** (<span class="ams-status-badge ams-status-badge--request-pending">Pending</span> in AMS) refers to that same status.
 
 ### Requesting restricted material
 
@@ -40,7 +40,7 @@ When at least one restricted Folder / Item is added to the request in the Catalo
 | Research Subject | Title or topic of the research for which access is requested. | Yes |
 | Motivation | Explanation of how the researcher intends to use the restricted content. The Catalog form permits a maximum of 250 characters. | Yes |
 
-The restricted Folder / Item enters AMS with status **New**. Processing of its container is halted at **Waiting for approval** until the required restricted-item decisions have been made.
+The restricted Folder / Item enters AMS with status <span class="ams-status-badge ams-status-badge--restricted-new">New</span>. Processing of its container is halted at <span class="ams-status-badge ams-status-badge--request-waiting">Waiting for approval</span> until the required restricted-item decisions have been made.
 
 ### Notifications after Catalog submission
 
@@ -54,9 +54,9 @@ Submitting a Catalog request has the following email side effects:
 
 ## Requests List
 
-![Requests List screen](../assets/screenshots/research-services/requests-list.jpg)
+![Requests List with researcher names and contact details blurred](../assets/screenshots/research-services/requests-list.png)
 
-*Requests List combines date shortcuts, workflow filters, researcher selection, item details, and print controls. The documentation screenshot uses a no-results search to protect personal data.*
+*Requests List combines date shortcuts, workflow filters, researcher selection, item and storage details, status badges, and row actions. Personal details are blurred in this example.*
 
 The list contains both regular and restricted requests. A request item with unresolved restricted content remains visible, but its service workflow is inactive until a decision permits processing or all requested parts have been rejected.
 
@@ -66,7 +66,7 @@ The list contains both regular and restricted requests. A request item with unre
 | --- | --- |
 | Search | Searches researcher first and last names, Archival Unit reference codes, identifiers, other identifiers, titles, and container barcodes. |
 | Request Date | Select **Today**, **Next Day**, **Next Week**, or **All**. Next Day means the next working day; from Friday through Sunday it resolves to Monday. Next Week covers the following Monday-to-Monday interval. |
-| Status | Filters by **In Queue**, **Pending** (In Processing), **Delivered**, **Returned**, **Reshelved**, or **Served**. |
+| Status | Filters by <span class="ams-status-badge ams-status-badge--request-queue">In Queue</span>, <span class="ams-status-badge ams-status-badge--request-pending">Pending</span> (In Processing), <span class="ams-status-badge ams-status-badge--request-delivered">Delivered</span>, <span class="ams-status-badge ams-status-badge--request-returned">Returned</span>, <span class="ams-status-badge ams-status-badge--request-reshelved">Reshelved</span>, or <span class="ams-status-badge ams-status-badge--request-served">Served</span>. |
 | Item Type | Filters by **Archival**, **Library**, or **Film Library** origin. |
 | Researcher | Limits the list to one approved researcher. |
 
@@ -75,14 +75,14 @@ The list contains both regular and restricted requests. A request item with unre
 | Column | Description | Sortable |
 | --- | --- | --- |
 | Planned Visit | Requested visit or access date. | Yes |
-| Identifier | For archival material, the Archival Unit reference code and container number. Other origins display their identifier. A **Has Restricted Material** badge means that the archival container contains at least one restricted Folder / Item. | Yes |
+| Identifier | For archival material, the Archival Unit reference code and container number. Other origins display their identifier. A <span class="ams-status-badge ams-status-badge--restricted-material">Has Restricted Material</span> badge means that the archival container contains at least one restricted Folder / Item. | Yes |
 | Folders / Items | Individual requested Folder / Item reference codes, with colors indicating restriction and decision status. | No |
-| MLR | Storage location or service information. It can also warn that the material appears in another request, is currently used, or is waiting to be reshelved. A digital barcode is shown when applicable. | No |
+| MLR | Storage location or service information. The <span class="ams-status-badge ams-status-badge--other-request">Appears in another request</span> badge identifies material included in another active request. The column can also warn that material is currently used or waiting to be reshelved. A digital barcode is shown when applicable. | No |
 | Researcher | Researcher's name and email address. | Yes |
 | Origin | **Archival**, **Library**, or **Film Library**. **Digital** is appended when a digital version is registered. | No |
 | Carrier Type | Physical carrier or container type. | No |
-| Status | Current container-level service status or **Waiting for approval**. | No |
-| Actions | Edit and Delete controls, when the request is eligible for processing. | No |
+| Status | Current container-level service status or <span class="ams-status-badge ams-status-badge--request-waiting">Waiting for approval</span>. | No |
+| Actions | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** and <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** controls, when the request is eligible for processing. | No |
 
 ### Restricted Folder / Item colors
 
@@ -90,45 +90,45 @@ The **Folders / Items** column shows the actual descriptions requested from the 
 
 | Display | Meaning | Handling consequence |
 | --- | --- | --- |
-| Transparent background | The Folder / Item is not restricted, or its restriction has been lifted. | It may be served. If the container also carries the **Has Restricted Material** warning, remove any restricted material that must not be handed to the researcher. |
-| Red | Restricted and **New**. | Await a Restricted Decision Maker's decision. The request row remains **Waiting for approval**. |
-| Green | **Approved**. | The requested Folder / Item may be served subject to any applicable conditions. |
-| Green-blue | **Approved for on-site viewing**. | The material may be used only in person in the Reading Room, even if a digital copy exists. |
-| Orange | **Rejected**. | Do not provide the Folder / Item. Remove it from the container before serving any approved or unrestricted material from the same container. |
-| Blue “missing” badge | The Folder / Item is marked missing. | Investigate its physical status before continuing. |
+| Transparent background | The Folder / Item is not restricted, or its restriction has been lifted. | It may be served. If the container also carries the <span class="ams-status-badge ams-status-badge--restricted-material">Has Restricted Material</span> warning, remove any restricted material that must not be handed to the researcher. |
+| <span class="ams-status-badge ams-status-badge--restricted-new">New</span> | Restricted and awaiting a decision. | Await a Restricted Decision Maker's decision. The request row remains <span class="ams-status-badge ams-status-badge--request-waiting">Waiting for approval</span>. |
+| <span class="ams-status-badge ams-status-badge--restricted-approved">Approved</span> | The request-specific access decision is approved. | The requested Folder / Item may be served subject to any applicable conditions. |
+| <span class="ams-status-badge ams-status-badge--restricted-onsite">Approved for on-site</span> | The request-specific decision permits on-site use. | The material may be used only in person in the Reading Room, even if a digital copy exists. |
+| <span class="ams-status-badge ams-status-badge--restricted-rejected">Rejected</span> | The request-specific access decision is rejected. | Do not provide the Folder / Item. Remove it from the container before serving any approved or unrestricted material from the same container. |
+| <span class="ams-status-badge ams-status-badge--missing">missing</span> | The Folder / Item is marked missing. | Investigate its physical status before continuing. |
 
-AMS enables the request workflow only after no requested restricted Folder / Item remains **New**. For example, a container with one approved and one rejected Folder / Item can proceed, but the rejected material must be removed before service. If all requested parts are rejected, there is nothing to serve; AMS moves the physical request item to **Returned** or the digital request item to **Served**.
+AMS enables the request workflow only after no requested restricted Folder / Item remains <span class="ams-status-badge ams-status-badge--restricted-new">New</span>. For example, a container with one approved and one rejected Folder / Item can proceed, but the rejected material must be removed before service. If all requested parts are rejected, there is nothing to serve; AMS moves the physical request item to <span class="ams-status-badge ams-status-badge--request-returned">Returned</span> or the digital request item to <span class="ams-status-badge ams-status-badge--request-served">Served</span>.
 
 ### Service status workflow
 
-Select the status badge to advance a request item. Later physical-handling stages provide an **Undo** control to move back one stage.
+Select the status badge to advance a request item. Later physical-handling stages provide an <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--undo"></span></span> **Undo** control to move back one stage.
 
 | Status | Meaning and next action |
 | --- | --- |
-| Waiting for approval | One or more requested restricted Folder / Items still require a decision. The service status cannot advance. |
-| In Queue | The six processing slots for this researcher and material type are occupied. AMS automatically promotes queued containers when a slot for the same type becomes available. |
-| In Processing (**Pending** in AMS) | The request occupies one of the researcher's six available slots for that material type and is ready for retrieval or digital preparation. Selecting the badge advances a physical request to **Delivered**. Digital delivery follows the Digital Requests workflow. |
-| Delivered | The physical material has been processed and prepared for the researcher. Entering this status records the served date and sends the researcher a prepared-material notification. |
-| Returned | The material has been returned after use. Entering this status records the return date and releases capacity for the next queued request. |
-| Reshelved | The material has been returned to storage. Entering this status records the reshelving date. |
-| Served | The digital material has been processed through the delivery workflow. The served and return dates are recorded. |
+| <span class="ams-status-badge ams-status-badge--request-waiting">Waiting for approval</span> | One or more requested restricted Folder / Items still require a decision. The service status cannot advance. |
+| <span class="ams-status-badge ams-status-badge--request-queue">In Queue</span> | The six processing slots for this researcher and material type are occupied. AMS automatically promotes queued containers when a slot for the same type becomes available. |
+| <span class="ams-status-badge ams-status-badge--request-pending">Pending</span> (In Processing) | The request occupies one of the researcher's six available slots for that material type and is ready for retrieval or digital preparation. Selecting the badge advances a physical request to <span class="ams-status-badge ams-status-badge--request-delivered">Delivered</span>. Digital delivery follows the Digital Requests workflow. |
+| <span class="ams-status-badge ams-status-badge--request-delivered">Delivered</span> | The physical material has been processed and prepared for the researcher. Entering this status records the served date and sends the researcher a prepared-material notification. |
+| <span class="ams-status-badge ams-status-badge--request-returned">Returned</span> | The material has been returned after use. Entering this status records the return date and releases capacity for the next queued request. |
+| <span class="ams-status-badge ams-status-badge--request-reshelved">Reshelved</span> | The material has been returned to storage. Entering this status records the reshelving date. |
+| <span class="ams-status-badge ams-status-badge--request-served">Served</span> | The digital material has been processed through the delivery workflow. The served and return dates are recorded. |
 
 !!! warning "Status changes take effect immediately"
-    Selecting a request status badge advances the workflow without a separate confirmation dialog. Confirm the row and its Folder / Item decisions before selecting the badge. The prepared-material email is sent when a physical item becomes **Delivered** or a digital item becomes **Served**.
+    Selecting a request status badge advances the workflow without a separate confirmation dialog. Confirm the row and its Folder / Item decisions before selecting the badge. The prepared-material email is sent when a physical item becomes <span class="ams-status-badge ams-status-badge--request-delivered">Delivered</span> or a digital item becomes <span class="ams-status-badge ams-status-badge--request-served">Served</span>.
 
 ### Row actions
 
 | Action | Availability and effect |
 | --- | --- |
-| Edit | Available only when access is allowed and the request is **In Queue**, **In Processing** (**Pending** in AMS), or **Delivered**. Opens the Request Item Form in a drawer. |
-| Delete | Available when access is allowed. After confirmation, permanently deletes the request item. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Available only when access is allowed and the request is <span class="ams-status-badge ams-status-badge--request-queue">In Queue</span>, <span class="ams-status-badge ams-status-badge--request-pending">Pending</span> (In Processing), or <span class="ams-status-badge ams-status-badge--request-delivered">Delivered</span>. Opens the Request Item Form in a drawer. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Available when access is allowed. After confirmation, permanently deletes the request item. |
 
 ### Footer actions
 
 | Action | Effect |
 | --- | --- |
-| Create Request | Opens the Request Form for a request entered by staff. |
-| Print Requests | Opens a printable list of all request items currently **In Processing**—labelled **Pending** in AMS. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--plus"></span></span> **Create Request** | Opens the Request Form for a request entered by staff. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--printer"></span></span> **Print Requests** | Opens a printable list of all request items currently **In Processing**—labelled <span class="ams-status-badge ams-status-badge--request-pending">Pending</span> in AMS. |
 
 ## Request Form
 
@@ -158,9 +158,9 @@ Reference Service Desk staff can create a request in AMS when assistance is requ
 
 Digital Requests uses the same filters, restricted-item colors, status blocking, Edit action, Delete action, Create Request action, and Print Requests action as Requests List. Its table omits the separate **Origin** and **Carrier Type** columns.
 
-When an eligible digital request is **In Processing** (**Pending** in AMS), select the cloud **Share** button beside its status to start the SharePoint preparation job. AMS displays progress through **Queued**, **Checking files**, **Creating directory**, **Copying files**, **Sending emails**, and **Completed**, or reports the failed step and error.
+When an eligible digital request is **In Processing** (<span class="ams-status-badge ams-status-badge--request-pending">Pending</span> in AMS), select the <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--cloud-upload"></span></span> **Share** button beside its status to start the SharePoint preparation job. AMS displays progress through **Queued**, **Checking files**, **Creating directory**, **Copying files**, **Sending emails**, and **Completed**, or reports the failed step and error.
 
-For archival requests, the job uses access copies that are marked as available in the Research Cloud and have a registered Research Cloud path. For Film Library requests, it locates the corresponding MP4. It creates or reuses a researcher folder in the requested-materials SharePoint library, copies the available files, and does not duplicate files already present. On successful completion, the request becomes **Served**.
+For archival requests, the job uses access copies that are marked as available in the Research Cloud and have a registered Research Cloud path. For Film Library requests, it locates the corresponding MP4. It creates or reuses a researcher folder in the requested-materials SharePoint library, copies the available files, and does not duplicate files already present. On successful completion, the request becomes <span class="ams-status-badge ams-status-badge--request-served">Served</span>.
 
 !!! warning "Current SharePoint delivery scope"
     In the current implementation, the job prepares the staff-side SharePoint folder and notifies Reference Service Desk staff. Direct sharing of that folder with the researcher and the researcher delivery email are temporarily disabled. A completed job must therefore not be treated by itself as proof that the researcher received access.
@@ -169,16 +169,16 @@ For archival requests, the job uses access copies that are marked as available i
 
 Restricted Access Management is the decision queue for requested Folder / Item records whose current **Access Rights** value is **Restricted**. Each row represents one restricted Folder / Item, not the whole container request.
 
-![Restricted Access Management screen](../assets/screenshots/research-services/restricted-access.jpg)
+![Restricted Access Management list with researcher names blurred](../assets/screenshots/research-services/restricted-access.png)
 
-*Restricted Access Management is shown with a privacy-safe no-results filter.*
+*Restricted Access Management provides search, status and researcher filters, links to the Catalog and AMS records, status information, and restricted-access decision actions. Researcher names are blurred in this example.*
 
 ### Filters
 
 | Filter | Use |
 | --- | --- |
 | Search | Searches researcher first and last names, the container's Archival Unit reference code, and container barcode. |
-| Status | Filters by **New**, **Approved**, **Rejected**, or **Lifted**. Records approved for on-site viewing can appear in the list but are not currently offered as a separate filter value. |
+| Status | Filters by <span class="ams-status-badge ams-status-badge--restricted-new">New</span>, <span class="ams-status-badge ams-status-badge--restricted-approved">Approved</span>, <span class="ams-status-badge ams-status-badge--restricted-rejected">Rejected</span>, or <span class="ams-status-badge ams-status-badge--restricted-lifted">Lifted</span>. Records approved for on-site viewing can appear in the list but are not currently offered as a separate filter value. |
 | Researcher | Limits the list to one approved researcher. |
 
 !!! note "Records included in the current queue"
@@ -192,9 +192,9 @@ Restricted Access Management is the decision queue for requested Folder / Item r
 | View | Opens the descriptive record in either the public Catalog or the AMS Folder / Item editor. | No |
 | Researcher | Researcher's name and email address. | Yes |
 | Planned Visit | Requested visit or access date. | Yes |
-| Status | **New**, **Approved**, **Approved for on-site**, **Rejected**, or **Lifted**. | No |
-| Info | Hover to display the submitted Research Subject and Motivation. | No |
-| Actions | Four decision actions, each protected by a confirmation prompt. | No |
+| Status | <span class="ams-status-badge ams-status-badge--restricted-new">New</span>, <span class="ams-status-badge ams-status-badge--restricted-approved">Approved</span>, <span class="ams-status-badge ams-status-badge--restricted-onsite">Approved for on-site</span>, <span class="ams-status-badge ams-status-badge--restricted-rejected">Rejected</span>, or <span class="ams-status-badge ams-status-badge--restricted-lifted">Lifted</span>. | No |
+| Info | Hover over <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--info-circle"></span></span> to display the submitted Research Subject and Motivation. | No |
+| Actions | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check"></span></span> **Approve**, <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check-square"></span></span> **Approve for on-site**, <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close"></span></span> **Reject**, and <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--file-protect"></span></span> **Lift**, each protected by a confirmation prompt. | No |
 
 ### Decision actions and side effects
 
@@ -202,10 +202,10 @@ Decisions apply to the individual requested Folder / Item. **Approve**, **Approv
 
 | Action | Request decision | Effect on the Folder / Item record |
 | --- | --- | --- |
-| Approve | Allows the researcher to use the material, subject to any stated conditions. | Access Rights remains **Restricted**. Later researchers must still request an individual decision. |
-| Approve for on-site | Allows use only in person in the Reading Room, including when a digital copy exists. | Access Rights remains **Restricted**. Later researchers must still request an individual decision. |
-| Reject | Denies this researcher access to the Folder / Item. | Access Rights remains **Restricted**. |
-| Lift | Grants access and permanently changes Access Rights to **Not Restricted**. | The item is removed from Restricted Access Management and appears without restricted highlighting in Requests List. Future requests no longer require a restricted-access decision unless the description is restricted again. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check"></span></span> **Approve** | Allows the researcher to use the material, subject to any stated conditions. | Access Rights remains **Restricted**. Later researchers must still request an individual decision. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check-square"></span></span> **Approve for on-site** | Allows use only in person in the Reading Room, including when a digital copy exists. | Access Rights remains **Restricted**. Later researchers must still request an individual decision. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close"></span></span> **Reject** | Denies this researcher access to the Folder / Item. | Access Rights remains **Restricted**. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--file-protect"></span></span> **Lift** | Grants access and permanently changes Access Rights to **Not Restricted**. | The item is removed from Restricted Access Management and appears without restricted highlighting in Requests List. Future requests no longer require a restricted-access decision unless the description is restricted again. |
 
 For OSF- or CEU-related materials that require a Non-Disclosure Agreement, the researcher must receive, complete, and return the agreement before access is provided. Approval or on-site approval in AMS does not by itself replace that requirement.
 

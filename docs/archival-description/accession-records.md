@@ -36,9 +36,9 @@ Select a sortable column heading to change the table order.
 
 | Action | Description | Effect |
 |---|---|---|
-| View | Opens the Accession Form in read-only mode. | Does not change the record. |
-| Edit | Opens the Accession Form with editable fields. | The record changes only after **Submit** is selected. |
-| Delete | Opens a confirmation dialog for a record that AMS allows to be removed. | Confirming permanently deletes the accession record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--eye"></span></span> **View** | Opens the Accession Form in read-only mode. | Does not change the record. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | Opens the Accession Form with editable fields. | The record changes only after **Submit** is selected. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Opens a confirmation dialog for a record that AMS allows to be removed. | Confirming permanently deletes the accession record. |
 
 The Delete button is shown only when the record is marked as removable. Because deletion can remove transfer history needed to understand the provenance and management of material, verify the accession and its relationships before confirming.
 
