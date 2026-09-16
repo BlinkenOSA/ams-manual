@@ -6,7 +6,7 @@ Archival finding aids describe and manage material within an archival Series at 
 |---|---|
 | [Folders / Items](../archival-description/finding-aids.md) | Select a Fonds, Subfonds, and Series; manage containers; create and edit Folder / Item records; use templates and Table View; print labels; and control publication and status. |
 | [Missing Folders / Items](../archival-description/finding-aids-missing.md) | Review Folder / Item records marked as missing and return them to non-missing status when appropriate. |
-| [Unprocessed Materials](../archival-description/finding-aids-unprocessed.md) | Create, edit, and move containers assigned to the separate unprocessed-materials workflow. |
+| [Undefined Materials](../archival-description/finding-aids-undefined.md) | Create, edit, and move containers assigned to the separate undefined-materials workflow. |
 
 ## How finding aids are structured
 
