@@ -49,7 +49,7 @@ nav:
       - Overview: archival-finding-aids/index.md
       - Folders / Items: archival-description/finding-aids.md
       - Missing Folders / Items: archival-description/finding-aids-missing.md
-      - Unprocessed Materials: archival-description/finding-aids-unprocessed.md
+      - Undefined Materials: archival-description/finding-aids-undefined.md
   - Collections management:
       - Overview: collections-management/index.md
       - Authority Lists: collections-management/lists.md
