@@ -1,12 +1,12 @@
-# Finding Aids: Unprocessed Materials
+# Finding Aids: Undefined Materials
 
-The **Unprocessed Materials** submenu manages containers assigned to the separate unprocessed-materials workflow. Access requires the **Unprocessed Materials** group and may differ from ordinary Finding Aids access.
+The **Undefined Materials** submenu manages containers assigned to the separate undefined-materials workflow. Access requires the **Undefined Materials** group and may differ from ordinary Finding Aids access.
 
 ## Select a Series
 
-![Unprocessed Materials selector](../assets/screenshots/archival-description/unprocessed-materials.jpg)
+![Undefined Materials selector](../assets/screenshots/archival-description/unprocessed-materials.jpg)
 
-*Unprocessed Materials begins with a Series selector restricted to the unprocessed-materials workflow.*
+*Undefined Materials begins with a Series selector restricted to the undefined-materials workflow.*
 
 Select the appropriate Series and then select **Containers**. Unlike the [Folders / Items selector](finding-aids.md#select-an-archival-unit), this screen does not require separate Fonds and Subfonds selections.
 
@@ -14,7 +14,7 @@ The **Containers** button remains disabled until a Series is selected. AMS remem
 
 ## Container List
 
-The Container List displays containers assigned to the selected unprocessed Series. It uses the same basic container metadata as the ordinary Container List, but container rows do not expand into Folder / Item tables.
+The Container List displays containers assigned to the selected Series. It uses the same basic container metadata as the ordinary Container List, but container rows do not expand into Folder / Item tables.
 
 ### Columns
 
@@ -43,7 +43,7 @@ Publication controls, Templates, Table View, and Label Print are not displayed i
 | Action | Description | Effect |
 |---|---|---|
 | Container Form | Expands or collapses the container creation form above the list. | Does not create a container by itself. |
-| Close | Returns to the unprocessed Series selector. | Does not change records. |
+| Close | Returns to the Series selector. | Does not change records. |
 
 ## Container Form
 
