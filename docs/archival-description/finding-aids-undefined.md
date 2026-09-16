@@ -34,7 +34,7 @@ The Container List displays containers assigned to the selected Series. It uses 
 | <span class="ams-digital-link" aria-hidden="true">Master: 1&nbsp; &#124; &nbsp;Access: 1</span> **Digital Copies** | Containers with digital-version information | Select the master/access-copy count to open the digital versions drawer. | Changes are saved from the drawer form. |
 | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--edit"></span></span> **Edit** | All containers | Opens the Container Form in a drawer. | Saves changes when the form is submitted. |
 | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--delete"></span></span> **Delete** | Removable containers only | Opens a confirmation dialog. | Confirming permanently removes the container. The button is disabled when the container is not removable. |
-| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--swap"></span></span> **Move container** | All containers | Opens the container-movement form. | Submitting moves the container to the selected destination in the processed Finding Aids hierarchy. |
+| <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--swap"></span></span> **Move container** | All containers | Opens the container-movement form. | Submitting moves the container to the selected destination in the processed Finding Aids hierarchy and places it as the last container in the target Series. |
 
 Publication controls, Templates, Table View, and Label Print are not displayed in this workflow.
 
