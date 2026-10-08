@@ -70,6 +70,8 @@ The list contains both regular and restricted requests. A request item with unre
 | Item Type | Filters by **Archival**, **Library**, or **Film Library** origin. |
 | Researcher | Limits the list to one approved researcher. |
 
+Researcher names in the **Researcher** column are clickable. Select a name to choose that person in the **Researcher** filter. AMS preserves the other active filters and returns the table to its first page.
+
 ### Columns
 
 | Column | Description | Sortable |
@@ -158,12 +160,25 @@ Reference Service Desk staff can create a request in AMS when assistance is requ
 
 Digital Requests uses the same filters, restricted-item colors, status blocking, Edit action, Delete action, Create Request action, and Print Requests action as Requests List. Its table omits the separate **Origin** and **Carrier Type** columns.
 
-When an eligible digital request is **In Processing** (<span class="ams-status-badge ams-status-badge--request-pending">Pending</span> in AMS), select the <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--cloud-upload"></span></span> **Share** button beside its status to start the SharePoint preparation job. AMS displays progress through **Queued**, **Checking files**, **Creating directory**, **Copying files**, **Sending emails**, and **Completed**, or reports the failed step and error.
+Researcher names in the **Researcher** column are clickable. Select a name to choose that person in the **Researcher** filter and show only their digital requests. AMS preserves the other active filters and returns the table to its first page.
 
-For archival requests, the job uses access copies that are marked as available in the Research Cloud and have a registered Research Cloud path. For Film Library requests, it locates the corresponding MP4. It creates or reuses a researcher folder in the requested-materials SharePoint library, copies the available files, and does not duplicate files already present. On successful completion, the request becomes <span class="ams-status-badge ams-status-badge--request-served">Served</span>.
+### Prepare and deliver digital materials
 
-!!! warning "Current SharePoint delivery scope"
-    In the current implementation, the job prepares the staff-side SharePoint folder and notifies Reference Service Desk staff. Direct sharing of that folder with the researcher and the researcher delivery email are temporarily disabled. A completed job must therefore not be treated by itself as proof that the researcher received access.
+Digital delivery has two separate actions. Complete preparation first, review the result, and send the access email only when the folder is ready for the researcher.
+
+The email button is not available until the preparation job has completed successfully.
+
+| Step | Control | Effect | Completed state |
+| --- | --- | --- | --- |
+| 1. Prepare materials | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--cloud-upload"></span></span> | Starts a background job that checks the source files, creates or reuses the researcher's requested-materials folder, and copies the available files into it. This step does **not** share the folder or send the delivery email. | The request becomes <span class="ams-status-badge ams-status-badge--request-served">Served</span>, and the preparation button remains visible but disabled: <span class="ams-ui-button ams-ui-button--small ams-ui-button--disabled" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--cloud-upload"></span></span>. |
+| 2. Share and email | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--mail"></span></span> | Shares the prepared folder with the researcher for view-only access, sends the templated access email to the researcher, and sends the corresponding notification to Reference Service Desk staff. | After successful sending, the email button is disabled and shown in green: <span class="ams-ui-button ams-ui-button--small ams-ui-button--success" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--mail"></span></span>. |
+
+When preparation starts, AMS displays **Queued**, **Checking files**, **Creating directory**, **Copying files**, and **Completed**, or identifies the failed step and reports its error. For archival requests, the job uses access copies marked as available in the Research Cloud with a registered Research Cloud path. For Film Library requests, it locates the corresponding MP4. Files already present in the destination folder are not duplicated.
+
+The share-and-email completion is recorded for the whole request, not only for the individual row from which it was started. After it succeeds, AMS treats that request as already shared and does not send the access email again from another prepared row belonging to the same request.
+
+!!! warning "Preparation is not delivery"
+    A completed preparation job only confirms that AMS copied the files into the staff-side SharePoint folder. The researcher receives access only after the <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--mail"></span></span> **Share and email** action succeeds and its button turns green.
 
 ## Restricted Access Management
 
@@ -180,6 +195,8 @@ Restricted Access Management is the decision queue for requested Folder / Item r
 | Search | Searches researcher first and last names, the container's Archival Unit reference code, and container barcode. |
 | Status | Filters by <span class="ams-status-badge ams-status-badge--restricted-new">New</span>, <span class="ams-status-badge ams-status-badge--restricted-approved">Approved</span>, <span class="ams-status-badge ams-status-badge--restricted-rejected">Rejected</span>, or <span class="ams-status-badge ams-status-badge--restricted-lifted">Lifted</span>. Records approved for on-site viewing can appear in the list but are not currently offered as a separate filter value. |
 | Researcher | Limits the list to one approved researcher. |
+
+Researcher names in the **Researcher** column are clickable. Select a name to choose that person in the **Researcher** filter. AMS preserves the other active filters and returns the table to its first page.
 
 !!! note "Records included in the current queue"
     The current AMS list includes restricted Folder / Item requests with a planned date on or after **1 January 2025**. A record disappears from this queue if **Lift** changes its Access Rights to **Not Restricted**.
