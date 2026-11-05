@@ -8,6 +8,8 @@ The **Requests** module contains three operational lists:
 
 The **Research** group can use Requests List and Digital Requests. Restricted Access Management requires membership in the **Restricted Decision Makers** group.
 
+All three lists include **Request Submitted**, which shows when the request was created, in `YYYY-MM-DD HH:mm` format. Select the column heading to sort requests from oldest to newest or newest to oldest. Rows belonging to the same request share its submission date and time. **Planned Visit** shows the requested visit or access date separately.
+
 ## Requests submitted through the Archival Catalog
 
 An approved researcher can request materials through the Blinken OSA [Archival Catalog](https://catalog.archivum.org/). The Catalog verifies the researcher's email address and virtual card number. A researcher whose registration is still <span class="ams-status-badge ams-status-badge--new">New</span> or has been <span class="ams-status-badge ams-status-badge--suspended">Suspended</span> cannot submit a request.
@@ -77,6 +79,7 @@ Researcher names in the **Researcher** column are clickable. Select a name to ch
 | Column | Description | Sortable |
 | --- | --- | --- |
 | Planned Visit | Requested visit or access date. | Yes |
+| Request Submitted | Date and time when the request was created. | Yes |
 | Identifier | For archival material, the Archival Unit reference code and container number. Other origins display their identifier. A <span class="ams-status-badge ams-status-badge--restricted-material">Has Restricted Material</span> badge means that the archival container contains at least one restricted Folder / Item. | Yes |
 | Folders / Items | Individual requested Folder / Item reference codes, with colors indicating restriction and decision status. | No |
 | MLR | Storage location or service information. The <span class="ams-status-badge ams-status-badge--other-request">Appears in another request</span> badge identifies material included in another active request. The column can also warn that material is currently used or waiting to be reshelved. A digital barcode is shown when applicable. | No |
@@ -158,7 +161,7 @@ Reference Service Desk staff can create a request in AMS when assistance is requ
 
 *Digital Requests shows request items whose archival container or Folder / Item has a registered digital version, together with eligible digital Film Library requests. The screenshot is filtered to avoid displaying researcher information.*
 
-Digital Requests uses the same filters, restricted-item colors, status blocking, Edit action, Delete action, Create Request action, and Print Requests action as Requests List. Its table omits the separate **Origin** and **Carrier Type** columns.
+Digital Requests uses the same filters, restricted-item colors, status blocking, Edit action, Delete action, Create Request action, and Print Requests action as Requests List. Its table includes the sortable **Request Submitted** column and omits the separate **Origin** and **Carrier Type** columns.
 
 Researcher names in the **Researcher** column are clickable. Select a name to choose that person in the **Researcher** filter and show only their digital requests. AMS preserves the other active filters and returns the table to its first page.
 
@@ -176,6 +179,8 @@ The email button is not available until the preparation job has completed succes
 When preparation starts, AMS displays **Queued**, **Checking files**, **Creating directory**, **Copying files**, and **Completed**, or identifies the failed step and reports its error. For archival requests, the job uses access copies marked as available in the Research Cloud with a registered Research Cloud path. For Film Library requests, it locates the corresponding MP4. Files already present in the destination folder are not duplicated.
 
 The share-and-email completion is recorded for the whole request, not only for the individual row from which it was started. After it succeeds, AMS turns all email buttons belonging to that request green and disables them. AMS treats the request as already shared and does not send the access email again from another prepared row belonging to it.
+
+If the researcher is new to CEU SharePoint or has not yet accepted an invitation, the email contains a Microsoft invitation link. They should open it using the same email account that received the message, accept the invitation, and continue to the folder. Researchers who have already accepted their invitation receive a direct folder link.
 
 The researcher's SharePoint permission is view-only and explicitly prevents downloading. The researcher can view the delivered materials in SharePoint but cannot download copies through the shared access link.
 
@@ -211,6 +216,7 @@ Researcher names in the **Researcher** column are clickable. Select a name to ch
 | View | Opens the descriptive record in either the public Catalog or the AMS Folder / Item editor. | No |
 | Researcher | Researcher's name and email address. | Yes |
 | Planned Visit | Requested visit or access date. | Yes |
+| Request Submitted | Date and time when the parent request was created. | Yes |
 | Status | <span class="ams-status-badge ams-status-badge--restricted-new">New</span>, <span class="ams-status-badge ams-status-badge--restricted-approved">Approved</span>, <span class="ams-status-badge ams-status-badge--restricted-onsite">Approved for on-site</span>, <span class="ams-status-badge ams-status-badge--restricted-rejected">Rejected</span>, or <span class="ams-status-badge ams-status-badge--restricted-lifted">Lifted</span>. | No |
 | Info | Hover over <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--info-circle"></span></span> to display the submitted Research Subject and Motivation. | No |
 | Actions | <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check"></span></span> **Approve**, <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--check-square"></span></span> **Approve for on-site**, <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--close"></span></span> **Reject**, and <span class="ams-ui-button ams-ui-button--small" aria-hidden="true"><span class="ams-ui-icon ams-ui-icon--file-protect"></span></span> **Lift**, each protected by a confirmation prompt. | No |
